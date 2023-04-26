@@ -1,5 +1,9 @@
 :root {
   --primary-font: 'Roboto', sans-serif;
+  --secondary-color: #1f1f3980;
+  --netrual-color: #fff;
+  --heading-color: #010a11;
+  --section-color: #f9f9f980;
 }
 
 *,
@@ -10,21 +14,38 @@
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+}
+
 html {
   font-family: var(--primary-font);
   scroll-behavior: smooth;
 }
 
 body {
-  background: #fff;
+  background: var(--netrual-color);
   text-align: center;
 }
+
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 48px 25px;
   margin-bottom: 65px;
+}
+
+header > div {
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--netrual-color);
 }
 
 .nav_list {
@@ -77,6 +98,10 @@ header {
   aspect-ratio: 1;
 }
 
+.skillsy_app {
+  margin-bottom: 144px;
+}
+
 .skillsy_app__heading > h1 {
   font-style: normal;
   font-weight: 700;
@@ -91,6 +116,136 @@ header {
   font-size: 15px;
   line-height: 23px;
   padding: 0 75px;
-  color: #1f1f3980;
+  color: var(--secondary-color);
   margin-bottom: 80px;
+}
+
+.mockup_app {
+  margin-bottom: 75px;
+}
+
+.prednosti_jedan {
+  display: grid;
+  gap: 40px;
+}
+
+.prednosti_jedan > li {
+  display: flex;
+  padding: 0 57px;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prednosti_jedan > li > h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.prednosti_jedan > li > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0 42px;
+  line-height: 23px;
+  color: var(--secondary-color);
+}
+
+.icon_cont {
+  display: grid;
+  place-content: center;
+  width: 70px;
+  aspect-ratio: 1;
+}
+
+.koristenje {
+  padding-top: 146px;
+  background: var(--section-color);
+}
+
+.koristenje_heading > h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 41px;
+  padding: 0 68px;
+  margin-bottom: 20px;
+}
+
+.koristenje_heading > h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 0 28px;
+  margin-bottom: 50px;
+  color: var(--secondary-color);
+}
+
+.mockup_koristenje {
+  margin-bottom: 120px;
+}
+
+.koristenje_dva {
+  margin-bottom: 76px;
+}
+
+.koristenje_dva > h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  margin-bottom: 20px;
+}
+
+.koristenje_dva > h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: var(--secondary-color);
+  padding: 0 42px;
+  margin-bottom: 50px;
+}
+
+.koristenje_dva > ul {
+  display: grid;
+  gap: 25px;
+}
+
+.koristenje_dva li > h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  padding: 0 52px;
+}
+
+.mockup_koristenje__dva {
+  margin-bottom: 65px;
+}
+
+.cilj > h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  padding: 0 100px;
+  margin-bottom: 20px;
+}
+
+.cilj > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cilj > div > h3 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 0 50px;
+  color: var(--secondary-color);
 }
