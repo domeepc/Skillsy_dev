@@ -82,4 +82,15 @@ header {
   font-weight: 700;
   font-size: 40px;
   line-height: 41px;
+  margin-bottom: 20px;
+}
+
+.skillsy_app__heading > h3 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  padding: 0 75px;
+  color: #1f1f3980;
+  margin-bottom: 80px;
 }
