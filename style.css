@@ -1,0 +1,85 @@
+:root {
+  --primary-font: 'Roboto', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: var(--primary-font);
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff;
+  text-align: center;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px 25px;
+  margin-bottom: 65px;
+}
+
+.nav_list {
+  display: none;
+}
+
+.logo {
+  height: 40px;
+}
+
+.menu > img {
+  width: 28px;
+  aspect-ratio: 1;
+  mix-blend-mode: difference;
+  cursor: pointer;
+}
+
+.hero {
+  margin-bottom: 95px;
+}
+
+.hero_text > h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 55px;
+}
+
+.hero_text > h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.hero_text {
+  margin-bottom: 70px;
+}
+
+.mockup_hero > img {
+  height: 472px;
+}
+
+.mockup_hero {
+  margin-bottom: 55px;
+}
+
+.go_down > img {
+  width: 60px;
+  aspect-ratio: 1;
+}
+
+.skillsy_app__heading > h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 41px;
+}
