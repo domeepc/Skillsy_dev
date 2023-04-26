@@ -428,8 +428,8 @@ header > div {
 
 .podnožje_heading > h3,
 .unos,
-.kontakt_mail > h3,
-.formalnost > h3 {
+.kontakt_mail > a,
+.formalnost > a {
   color: var(--footer-text-color);
 }
 
@@ -476,7 +476,8 @@ header > div {
   gap: 20px;
 }
 
-.kontakt_mail > h3 {
+.kontakt_mail > a {
+  text-decoration: none;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -490,7 +491,8 @@ header > div {
   gap: 20px;
 }
 
-.formalnost > h3 {
+.formalnost > a {
+  text-decoration: none;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
