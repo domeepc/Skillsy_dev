@@ -741,6 +741,7 @@ header > div {
   }
 
   .koristenje_dva > h3 {
+    padding: 0;
     width: 500px;
     font-style: normal;
     font-weight: 400;
@@ -863,8 +864,16 @@ header > div {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .pitanja > li:nth-child(3) > .pitanje {
-    width: 408px;
+  .pitanja > li:nth-child(1) > .pitanje1 {
+    width: 250px;
+  }
+
+  .pitanja > li:nth-child(2) > .pitanje2 {
+    width: 250px;
+  }
+
+  .pitanja > li:nth-child(3) > .pitanje3 {
+    width: 250px;
   }
 
   .unutarnja {
@@ -953,6 +962,13 @@ header > div {
     height: 1px;
     background: rgba(255, 255, 255, 0.1);
     bottom: -100px;
+  }
+
+  .FAQ_heading > h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
   }
 
   .news > .unos {
