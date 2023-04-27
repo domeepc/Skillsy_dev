@@ -252,18 +252,19 @@ header > div {
 }
 
 .koristenje_dva > h3 {
+  padding: 0 10%;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
   color: var(--secondary-color);
-  padding: 0 42px;
   margin-bottom: 50px;
 }
 
 .koristenje_dva > ul {
   display: grid;
   gap: 25px;
+  list-style-type: none;
 }
 
 .koristenje_dva li > h2 {
@@ -271,7 +272,7 @@ header > div {
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
-  padding: 0 52px;
+  padding: 0 45px;
 }
 
 .mockup_koristenje__dva {
@@ -373,7 +374,11 @@ header > div {
   margin-bottom: 60px;
 }
 
-.pitanja > li > h1 {
+.ansbox {
+  display: none;
+}
+
+.pitanja > li > div > h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -381,13 +386,13 @@ header > div {
   padding-top: 32px;
 }
 
-.pitanja > li > h3 {
+.pitanja > li > div > h3 {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: var(--secondary-color);
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 42px;
 }
 
@@ -410,6 +415,9 @@ header > div {
 }
 
 .skidanje_aplikacije {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(1, 1fr);
   background-color: var(--section-color-dva);
   border-radius: 25px;
   margin: 0 25px;
@@ -417,7 +425,11 @@ header > div {
   text-align: left;
 }
 
-.skidanje_aplikacije > h1 {
+.mockup_pitanja {
+  margin-bottom: 12px;
+}
+
+.skidanje_aplikacije > div > h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 35px;
@@ -425,7 +437,7 @@ header > div {
   margin-bottom: 20px;
 }
 
-.skidanje_aplikacije > h3 {
+.skidanje_aplikacije > div > h3 {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -532,8 +544,11 @@ header > div {
   line-height: 30px;
 }
 
+.kontakt {
+  margin-bottom: 100px;
+}
+
 .formalnost {
-  padding-top: 100px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -619,7 +634,12 @@ header > div {
     margin-bottom: 80px;
   }
 
+  .skillsy_app {
+    margin-bottom: 200px;
+  }
+
   .skillsy_app__heading > h1 {
+    font-style: normal;
     font-weight: 700;
     font-size: 50px;
     line-height: 60px;
@@ -681,5 +701,290 @@ header > div {
     text-align: left;
     align-items: start;
     padding-inline-end: 50%;
+  }
+
+  .koristenje_heading {
+    margin-bottom: 150px;
+  }
+
+  .koristenje_heading > h3 {
+    padding: 0 20%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .koristenje_heading > h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .mockup_koristenje {
+    width: max-content;
+    margin-bottom: 0;
+  }
+
+  .koristenje_dva {
+    width: max-content;
+    margin-bottom: 30px;
+  }
+
+  .koristenje_dva > h1 {
+    width: 433px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .koristenje_dva > h3 {
+    width: 500px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .koristenje_dva h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .mockup_cont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    align-items: center;
+    gap: 187px;
+    margin-bottom: 150px;
+  }
+
+  .mockup_cont__dva {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 187px;
+    text-align: left;
+    padding-bottom: 280px;
+  }
+
+  .mockup_koristenje__dva {
+    grid-column: 2;
+    justify-self: start;
+  }
+
+  .cilj {
+    grid-column: 1;
+    grid-row: 1;
+    padding-left: 30%;
+  }
+
+  .cilj > h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .cilj > div > h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .cilj h1,
+  .cilj > div > h3 {
+    padding: 0;
+  }
+
+  .cilj > div {
+    gap: 10px;
+  }
+
+  .mockup_koristenje {
+    justify-self: end;
+  }
+
+  .skidanje_app {
+    display: grid;
+    justify-items: center;
+  }
+
+  .kvadratna_pozadina {
+    border-radius: 25px;
+    padding: 150px 15%;
+  }
+
+  .skidanje_heading > h3 {
+    padding: 0 33%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .skidanje_heading > h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .skidanje_heading {
+    margin-bottom: 80px;
+  }
+
+  .prednosti_dva {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .prednosti_dva > li > p {
+    padding: 0;
+    width: 80%;
+  }
+
+  .FAQ_heading {
+    margin-bottom: 101px;
+  }
+
+  .pitanja > li {
+    margin: 0 25%;
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pitanja > li:nth-child(3) > .pitanje {
+    width: 408px;
+  }
+
+  .unutarnja {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+  }
+
+  .ansbox {
+    display: block;
+    padding: 30px 0;
+  }
+
+  .pitanja {
+    margin-bottom: 200px;
+  }
+
+  .skidanje_aplikacije {
+    margin: 0 20%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mockup_text__dva {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0 5%;
+  }
+
+  .skidanje_aplikacije > div > h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .skidanje_aplikacije > div > h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .mockup_pitanja {
+    grid-column: 2;
+  }
+
+  .google_btn {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .news {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 53px;
+    position: relative;
+    margin-bottom: 305px;
+  }
+
+  .podnožje_heading > h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .podnožje_heading > h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .news::after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    bottom: -100px;
+  }
+
+  .news > .unos {
+    width: 430px;
+  }
+
+  .news > .prijava_btn {
+    width: 215px;
+  }
+
+  .info {
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 100px;
+  }
+
+  .kontakt {
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 44px;
+    margin-bottom: 0;
+  }
+
+  .formalnost {
+    text-align: right;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 44px;
   }
 }
