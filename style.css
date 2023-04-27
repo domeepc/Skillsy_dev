@@ -155,16 +155,14 @@ header > div {
   margin-bottom: 80px;
 }
 
-.mockup_app {
-  margin-bottom: 75px;
-}
-
 .mockup_app > img:last-child {
   display: none;
 }
 
 .prednosti_jedan {
   display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 3;
   gap: 40px;
 }
 
@@ -190,6 +188,20 @@ header > div {
   padding: 0 42px;
   line-height: 23px;
   color: var(--secondary-color);
+}
+
+.prednosti_jedan > li:first-child {
+  grid-column: 1;
+  padding: 0;
+}
+.prednosti_jedan > li:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.prednosti_jedan > li:nth-child(3) {
+  grid-column: 1;
+  grid-row: 3;
 }
 
 .icon_cont {
