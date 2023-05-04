@@ -16,20 +16,17 @@
   </head>
   <body>
     <header>
-      <div>
         <img class="logo" src="logo_full.png" alt="" />
+        <button aria-controls="nav_list" aria-expanded="false" class="menu">
+        </button>
         <nav class="nav">
-          <div class="menu">
-            <img src="menu.svg" alt="menu" />
-          </div>
-          <ul class="nav_list">
-            <li>Skillsy app</li>
-            <li>Dodaci</li>
-            <li>Prednosti</li>
-            <li>Baza pitanja</li>
+          <ul id="nav_list" data-visible="false" class="nav_list">
+            <li><a href="#skillsy_app">Skillsy app</a></li>
+            <li><a href="#koristenje">Dodaci</a></li>
+            <li><a href="#skidanje_app">Prednosti</a></li>
+            <li><a href="#FAQ">Baza pitanja</a></li>
           </ul>
         </nav>
-      </div>
     </header>
     <main>
       <section class="hero">
@@ -158,7 +155,7 @@
       </section>
       <section class="skidanje_app" id="skidanje_app">
         <div class="kvadratna_pozadina">
-          <div class="skidanje_heading">
+          <div class="skidanje_heading" >
             <h1>Skinite aplikaciju odmah</h1>
             <h3>
               Isprobajte našu aplikaciju danas i pružite djeci edukaciju koju
@@ -315,5 +312,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="/script.js"></script>
   </body>
 </html>
